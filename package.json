@@ -1,0 +1,23 @@
+{
+  "name": "medirect",
+  "version": "1.0.0",
+  "description": "evaluation of technical skills ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "uatapitest": "npx playwright test --project=apiuat",
+    "uatapipositive": "npx playwright test tests/api-e2e-tests/booking.200.scenarios.api.tests.ts --project=apiuat",
+    "uatwebtest": "npx playwright test tests/web-e2e-tests/equitiessearch.tests.ts --project=uiuat --headed"
+  },
+  "author": "rajasekhar",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "dotenv": "^16.4.7",
+    "latest": "^0.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.1"
+  }
+}
